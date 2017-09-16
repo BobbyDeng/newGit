@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-3.2.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").click(function(){
+    $("input:text").val(function(n,c){
+      return c + " Gates";
+    });
+  });
+});
+</script>
+</head>
+
+<body>
+<p>Name: <input type="text" name="user" value="Bill" /></p>
+<button>设置文本域的值</button>
+</body>
+</html>
+<!-- 为什么c 没有定义过，却能获取到 当前被选元素的 value值 -->
